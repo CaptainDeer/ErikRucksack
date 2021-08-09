@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "48718032475",
+    "project_id": "erikrucksack",
+    "storage_bucket": "erikrucksack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48718032475:android:6a16cfa038e09a7b3f997e",
+        "android_client_info": {
+          "package_name": "com.captaindeer.erikrucksack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48718032475-p73jj6dhgl9f3l3j6idsmkji5p3bvt2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.captaindeer.erikrucksack",
+            "certificate_hash": "a9695a225406dd168d148bd8b346ee80e1ddf205"
+          }
+        },
+        {
+          "client_id": "48718032475-snf2rvlb7377tugjogogopqggcoilc9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuqBaZ3BdLjdDNa4nmi8fO7RDzodWOwNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48718032475-snf2rvlb7377tugjogogopqggcoilc9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
