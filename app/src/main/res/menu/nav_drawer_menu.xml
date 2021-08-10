@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/apps"
+        android:enabled="true"
+        android:title="Applications">
+        <item
+            android:id="@+id/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/homeWorks"
+            android:enabled="false"
+            android:title="Homeworks" />
+        <item
+            android:id="@+id/myInstagram"
+            android:enabled="false"
+            android:title="Instagram" />
+        <item
+            android:id="@+id/home2"
+            android:enabled="false"
+            android:title="Example" />
+        <item
+            android:title=" " />
+        <item
+            android:id="@+id/logOut"
+            android:title="Log Out" />
+
+    </item>
+</menu>
+
