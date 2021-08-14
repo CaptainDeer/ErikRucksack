@@ -2,4 +2,17 @@
     <string name="app_name">Erik Rucksack</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    //Home Fragment
+    <string name="welcome">Welcome</string>
+    <string name="myName">My name is Erik Hernández</string>
+    <string name="androidDev">Android developer (Kotlin)</string>
+    <string name="app_desc">Erik Rucksack is an application where the technologies that I have mastered over time are implemented.</string>
+    <string name="findProject">You can find the code by versions in my Git profile</string>
+    <string name="gitHub">CaptainDeer | GitHub</string>
+    <string name="tech">Implemented Technologies</string>
+    <string name="features">Features</string>
+    <string name="erik_captain">Erik Rucksack || Captain Deer</string>
+
+
 </resources>

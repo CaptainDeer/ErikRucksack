@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F3EE">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/home_iv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/erikrucksack"
+            app:layout_constraintBottom_toBottomOf="@id/home_constraintLayout"
+            app:layout_constraintEnd_toEndOf="@id/home_constraintLayout"
+            app:layout_constraintStart_toStartOf="@id/home_constraintLayout"
+            app:layout_constraintTop_toTopOf="@id/home_constraintLayout"
+            app:layout_constraintVertical_bias="0.01" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHome25v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHome75v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".75" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_card_iv"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            app:cardBackgroundColor="@color/orange"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="@id/home_constraintLayout"
+            app:layout_constraintEnd_toEndOf="@id/guidelineHome75v"
+            app:layout_constraintStart_toStartOf="@id/guidelineHome25v"
+            app:layout_constraintTop_toTopOf="@id/home_constraintLayout"
+            app:layout_constraintVertical_bias="0.11">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center|top"
+                android:scaleType="centerCrop"
+                android:src="@drawable/erikhdez" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHome15v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHome85v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".9" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/home_card_tv"
+            app:layout_constraintEnd_toEndOf="@id/guidelineHome75v"
+            app:layout_constraintStart_toStartOf="@id/guidelineHome25v"
+            app:layout_constraintTop_toBottomOf="@id/home_card_iv" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_card_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/king_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/home_constraintLayout"
+            app:layout_constraintVertical_bias=".352">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/myName"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_light"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/androidDev"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_light"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="40dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/app_desc"
+                    android:textColor="@color/primary_light"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/findProject"
+                    android:textColor="@color/primary_light"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_git"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:text="@string/gitHub"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/home_tv_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tech"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/home_constraintLayout"
+            app:layout_constraintVertical_bias=".443"
+            app:textAllCaps="true" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_card_rvTech"
+            android:layout_width="0dp"
+            android:layout_height="190dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="#5594D8"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guidelineHome85v"
+            app:layout_constraintStart_toStartOf="@id/guidelineHome15v"
+            app:layout_constraintTop_toBottomOf="@id/home_tv_skills"
+            app:layout_constraintVertical_bias=".03">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_rv_tech"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/home_tv_features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/features"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_card_rvTech"
+            app:layout_constraintVertical_bias=".06"
+            app:textAllCaps="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_rv_features"
+            android:layout_width="0dp"
+
+            android:layout_height="500dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guidelineHome85v"
+            app:layout_constraintStart_toStartOf="@id/guidelineHome15v"
+            app:layout_constraintTop_toBottomOf="@id/home_tv_features"
+            app:layout_constraintVertical_bias=".2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_footer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_rv_features"
+            app:layout_constraintVertical_bias="0.01">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/erik_captain"
+                android:textAlignment="center"
+                android:textColor="@color/primary_light" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
