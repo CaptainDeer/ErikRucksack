@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/king_blue"
+    tools:context=".ui.billboard.BillboardFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/billboard_guideline25H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".25" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/billboard_iv_header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/king_blue"
+        android:scaleType="centerCrop"
+        android:src="@drawable/billboard"
+        app:layout_constraintBottom_toBottomOf="@id/billboard_guideline25H"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_dark"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="The Anime Database"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@id/billboard_guideline25H"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <SearchView
+        android:id="@+id/billboard_searchview"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:elevation="2dp"
+        android:background="@drawable/btn_rounded_light"
+        android:layout_margin="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/billboard_guideline25H"
+        app:layout_constraintVertical_bias=".01" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/billboard_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="8dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/billboard_searchview"
+        app:layout_constraintVertical_bias=".03" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
