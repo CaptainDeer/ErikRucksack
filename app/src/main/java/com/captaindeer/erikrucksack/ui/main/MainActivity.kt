@@ -11,6 +11,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.captaindeer.erikrucksack.R
 import com.captaindeer.erikrucksack.databinding.ActivityMainBinding
+import com.captaindeer.erikrucksack.ui.billboard.BillboardFragment
 import com.captaindeer.erikrucksack.ui.home.HomeFragment
 import com.captaindeer.erikrucksack.ui.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -65,9 +66,9 @@ class MainActivity : AppCompatActivity() {
         binding.navView.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> replaceFragment(HomeFragment())
-                R.id.homeWorks -> Toast.makeText(this, "HomeWorks", Toast.LENGTH_SHORT).show()
+                R.id.billboard -> replaceFragment(BillboardFragment())
+                R.id.homeWorks -> Toast.makeText(this, "Homework", Toast.LENGTH_SHORT).show()
                 R.id.myInstagram -> Toast.makeText(this, "myInstagram", Toast.LENGTH_SHORT).show()
-                R.id.home2 -> Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
 
                 R.id.logOut -> logOut()
             }

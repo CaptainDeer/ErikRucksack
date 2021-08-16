@@ -13,6 +13,8 @@
     <string name="tech">Implemented Technologies</string>
     <string name="features">Features</string>
     <string name="erik_captain">Erik Rucksack || Captain Deer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

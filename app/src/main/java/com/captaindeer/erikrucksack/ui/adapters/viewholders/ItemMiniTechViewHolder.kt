@@ -8,10 +8,10 @@ import com.squareup.picasso.Picasso
 class ItemMiniTechViewHolder(view: View) :
     RecyclerView.ViewHolder(view) {
 
-    val binding = ItemMiniTechBinding.bind(view)
+    private val binding = ItemMiniTechBinding.bind(view)
 
-        fun bind(image:String, name:String){
-            binding.itemMiniTechTv.text = name
-            Picasso.get().load(image).into(binding.itemMiniTechIv)
-        }
+    fun bind(image: String, name: String) {
+        binding.itemMiniTechTv.text = name
+        Picasso.get().load(image).into(binding.itemMiniTechIv)
+    }
 }

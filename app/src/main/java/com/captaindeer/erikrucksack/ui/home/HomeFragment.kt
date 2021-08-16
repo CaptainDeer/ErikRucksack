@@ -28,12 +28,9 @@ class HomeFragment : Fragment(), HomeInterface.View, ItemTechListener {
     private var itemFeatureModel = arrayListOf<ItemFeatureModel>()
     private var itemsTechModel = arrayListOf<ItemTechModel>()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         presenter = HomePresenter(this)
-
     }
 
     override fun onCreateView(
@@ -61,6 +58,7 @@ class HomeFragment : Fragment(), HomeInterface.View, ItemTechListener {
         binding!!.homeRvTech.adapter = adapterMiniTech
         binding!!.homeRvFeatures.adapter = adapterItemFeature
 
+        //Functions
         presenter.itemMiniTechData()
         presenter.itemFeature()
 
